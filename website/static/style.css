@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.wrapper {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.inputfield {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input, .custom_select select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input:focus, .custom_select select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.check div {
+    display: flex;
+    align-items: center;
+}
+
+.check input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+}
+
+.custom_select {
+    position: relative;
+}
+
+.custom_select select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: white url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 10px center;
+    background-size: 30px;
+    padding-right: 40px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #2575fc 0%, #6a11cb 100%);
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
